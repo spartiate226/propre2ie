@@ -14,7 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:api')->group(function(){
+
     Route::apiResource('poubelle','PoubelController');
-    Route::post("connect","UserController@connect");
-});
+
